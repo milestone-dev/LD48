@@ -567,9 +567,10 @@ MonoBehaviour:
   CurrentDialogTree: {fileID: 0}
   CurrentCutscene: {fileID: 0}
   CursorTooltip: {fileID: 8804378128307893370}
-  DefaultCursorTexture: {fileID: 2800000, guid: 338f4199daf2a4bb5920c4f681d37839, type: 3}
-  InteractCursorTexture: {fileID: 2800000, guid: dc5dccd56e8554a5db3e3ac4e9ed5267, type: 3}
-  TalkCursorTexture: {fileID: 2800000, guid: 3260b3cff7bbb4c62a3dcc3d637e4425, type: 3}
+  DefaultCursorTexture: {fileID: 2800000, guid: 58fb9d3a75646479cbd7ddc3afbd34a4, type: 3}
+  InteractCursorTexture: {fileID: 2800000, guid: 584d41b92a4ba49f2bd548ca31fbac27, type: 3}
+  TalkCursorTexture: {fileID: 2800000, guid: a1df8366a5bb14856bcda7ac5556b457, type: 3}
+  ObserveCursorTexture: {fileID: 2800000, guid: 314699ffff7e14e0cbcd7de5aa8904c9, type: 3}
 --- !u!82 &3434418148811431112
 AudioSource:
   m_ObjectHideFlags: 0

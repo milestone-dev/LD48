@@ -29,6 +29,7 @@ public class GameUIController : MonoBehaviour {
     public Texture2D DefaultCursorTexture;
     public Texture2D InteractCursorTexture;
     public Texture2D TalkCursorTexture;
+    public Texture2D ObserveCursorTexture;
 
     public static GameUIController Instance;
 
@@ -166,14 +167,21 @@ public class GameUIController : MonoBehaviour {
         if (GameController.State != GameState.NavigatingScene)
             return;
 
-        //TODO Handle InteractableObject vs ObservableObject
         CursorTooltipSetText(sceneObject.tooltipText);
-        if (sceneObject.type == SceneObjectType.Character)
+        switch (sceneObject.type)
         {
-            CursorSet(TalkCursorTexture);
-        } else
-        {
-            CursorSet(InteractCursorTexture);
+            case SceneObjectType.Character:
+                CursorSet(TalkCursorTexture);
+                break;
+            case SceneObjectType.InteractableObject:
+                CursorSet(InteractCursorTexture);
+                break;
+            case SceneObjectType.ObservableObject:
+                CursorSet(ObserveCursorTexture);
+                break;
+            default:
+                CursorSet(DefaultCursorTexture);
+                break;
         }
     }
 
