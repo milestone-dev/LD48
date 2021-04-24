@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour {
 
@@ -24,6 +25,13 @@ private void Start()
 
     public virtual void EnterScene()
     {
+    }
+
+    public virtual void ExitToScene(string sceneName)
+    {
+        Debug.Log("ExitToScene" + sceneName);
+
+        SceneManager.LoadScene(sceneName);
     }
 
     public virtual void CutsceneHandleCallback(string tag)
