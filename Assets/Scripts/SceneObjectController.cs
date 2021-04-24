@@ -15,23 +15,28 @@ public class SceneObjectController : MonoBehaviour {
     public string tooltipText;
     public SceneObjectType type;
     public SOCutscene Cutscene;
+    public SOInventoryItem Item;
 
     private void OnMouseEnter()
     {
-        if (GameController.State == GameState.NavigatingScene)
+        if (GameController.InteractionState == GameInteractionState.NavigatingScene)
             GameUIController.Instance.SceneObjectMouseEnter(this);
     }
 
     private void OnMouseExit()
     {
-        if (GameController.State == GameState.NavigatingScene)
+        if (GameController.InteractionState == GameInteractionState.NavigatingScene)
             GameUIController.Instance.SceneObjectMouseExit(this);
     }
 
     private void OnMouseUp()
     {
-        if (GameController.State == GameState.NavigatingScene && Cutscene)
+        if (GameController.InteractionState == GameInteractionState.NavigatingScene && Item)
+            GameUIController.Instance.InventoryAddItem(Item);
+
+        if (GameController.InteractionState == GameInteractionState.NavigatingScene && Cutscene)
             GameUIController.Instance.CutsceneStart(Cutscene);
+
     }
 }
 

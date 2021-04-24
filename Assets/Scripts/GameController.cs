@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public enum GameState
+public enum GameInteractionState
 {
     InCutscene,
     InteractingWithToolbars,
@@ -14,12 +14,14 @@ public class GameController : MonoBehaviour {
 
     public static GameController Instance;
     public SceneController CurrentSceneController;
-    public static GameState State = GameState.NavigatingScene;
+    public GameState State;
+    public static GameInteractionState InteractionState = GameInteractionState.NavigatingScene;
 
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
         Instance = this;
+        State = GetComponent<GameState>();
     }
 
     public static void CutsceneHandleCallback(string info)

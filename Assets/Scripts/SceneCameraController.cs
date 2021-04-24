@@ -18,7 +18,7 @@ public class SceneCameraController : MonoBehaviour {
 
     public void Update()
     {
-        if (GameController.State != GameState.NavigatingScene)
+        if (GameController.InteractionState != GameInteractionState.NavigatingScene)
         {
             return;
         }

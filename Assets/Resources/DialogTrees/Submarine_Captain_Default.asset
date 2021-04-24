@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc62eef03d3de4921980cbebdfc9f719, type: 3}
-  m_Name: Submarine_CaptainDefault
+  m_Name: Submarine_Captain_Default
   m_EditorClassIdentifier: 
   Options:
-  - Text: Test
-    DisabledByDefault: 0
-    Cutscene: {fileID: 0}
-    DialogTree: {fileID: 11400000}
-    tag: 
   - Text: Bye
     DisabledByDefault: 0
     Cutscene: {fileID: 0}
+    DialogTree: {fileID: 0}
+    tag: 
+  - Text: Why are we not descending?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 17e6bc5eb59af44aaba78bc5658cb8d0, type: 2}
     DialogTree: {fileID: 0}
     tag: 
   Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}

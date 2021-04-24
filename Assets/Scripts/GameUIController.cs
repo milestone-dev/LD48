@@ -51,18 +51,18 @@ public class GameUIController : MonoBehaviour {
             DialogToolbar.SetActive(true);
             DialogTreeToolbar.SetActive(false);
             InventoryToolbar.SetActive(false);
-            GameController.State = GameState.InCutscene;
+            GameController.InteractionState= GameInteractionState.InCutscene;
         }
         else if (CurrentDialogTree)
         {
-            GameController.State = GameState.InteractingWithToolbars;
+            GameController.InteractionState= GameInteractionState.InteractingWithToolbars;
             DialogToolbar.SetActive(true);
             DialogTreeToolbar.SetActive(true);
             InventoryToolbar.SetActive(false);
         }
         else
         {
-            GameController.State = GameState.NavigatingScene;
+            GameController.InteractionState= GameInteractionState.NavigatingScene;
             DialogToolbar.SetActive(false);
             DialogTreeToolbar.SetActive(false);
             InventoryToolbar.SetActive(InventoryItems.Count > 0);
@@ -119,9 +119,23 @@ public class GameUIController : MonoBehaviour {
         }
     }
 
+    public void InventoryAddItem(SOInventoryItem item)
+    {
+        if (!InventoryHasItem(item))
+        {
+            InventoryItems.Add(item);
+            InventoryRedrawItems();
+        }
+    }
+
     public bool InventoryIsHoldingItemNamed(string itemName)
     {
         return InventoryHeldItem && InventoryHeldItem.name.Equals(itemName);
+    }
+
+    public bool InventoryHasItem(SOInventoryItem item)
+    {
+        return InventoryItems.Exists(i => i.Equals(item));
     }
 
     public bool InventoryHasItemNamed(string itemName)
@@ -131,7 +145,7 @@ public class GameUIController : MonoBehaviour {
 
     public void InventoryObjectMouseClick(GameObject inventoryObject)
     {
-        if (GameController.State != GameState.NavigatingScene)
+        if (GameController.InteractionState != GameInteractionState.NavigatingScene)
             return;
 
         if (InventoryHeldItem)
@@ -145,7 +159,7 @@ public class GameUIController : MonoBehaviour {
 
     public void InventoryObjectMouseEnter(GameObject inventoryObject)
     {
-        if (GameController.State != GameState.NavigatingScene)
+        if (GameController.InteractionState != GameInteractionState.NavigatingScene)
             return;
 
         CursorTooltipSetText(inventoryObject.name);
@@ -154,7 +168,7 @@ public class GameUIController : MonoBehaviour {
 
     public void InventoryObjectMouseExit(GameObject inventoryObject)
     {
-        if (GameController.State != GameState.NavigatingScene)
+        if (GameController.InteractionState != GameInteractionState.NavigatingScene)
             return;
 
         CursorTooltipClearText();
@@ -164,7 +178,7 @@ public class GameUIController : MonoBehaviour {
 
     public void SceneObjectMouseEnter(SceneObjectController sceneObject)
     {
-        if (GameController.State != GameState.NavigatingScene)
+        if (GameController.InteractionState != GameInteractionState.NavigatingScene)
             return;
 
         CursorTooltipSetText(sceneObject.tooltipText);
@@ -187,7 +201,7 @@ public class GameUIController : MonoBehaviour {
 
     public void SceneObjectMouseExit(SceneObjectController sceneObject)
     {
-        if (GameController.State != GameState.NavigatingScene)
+        if (GameController.InteractionState!= GameInteractionState.NavigatingScene)
             return;
 
         CursorTooltipClearText();
@@ -425,16 +439,16 @@ public class GameUIController : MonoBehaviour {
 
     private void Update()
     {
-        if (GameController.State == GameState.InCutscene && Cursor.visible)
+        if (GameController.InteractionState == GameInteractionState.InCutscene && Cursor.visible)
         {
             Cursor.visible = false;
         }
-        else if (GameController.State != GameState.InCutscene && !Cursor.visible)
+        else if (GameController.InteractionState!= GameInteractionState.InCutscene && !Cursor.visible)
         {
             Cursor.visible = true;
         }
 
-        if (GameController.State == GameState.InCutscene && CursorTooltip.activeSelf)
+        if (GameController.InteractionState== GameInteractionState.InCutscene && CursorTooltip.activeSelf)
         {
             CursorTooltipClearText();
             CursorReset();

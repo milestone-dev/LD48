@@ -569,7 +569,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: tooltipText
-      value: "Do'k\xF6ppi Coffee Maker"
+      value: Bedding
       objectReference: {fileID: 0}
     - target: {fileID: 1103114945248165073, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Size.x
@@ -1157,8 +1157,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1306381442}
     m_Modifications:
     - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Item
+      value: 
+      objectReference: {fileID: 11400000, guid: 435245662efde4e34b1eb9d38bb78440, type: 2}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: tooltipText
-      value: "Do'k\xF6ppi Coffee Maker"
+      value: Bedding
       objectReference: {fileID: 0}
     - target: {fileID: 1103114945248165073, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Size.x
