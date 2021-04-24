@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "New cutscene character", fileName = "Character")]
+[CreateAssetMenu(menuName = "New Character", fileName = "Character")]
 
 public class SOCharacter : ScriptableObject
 {

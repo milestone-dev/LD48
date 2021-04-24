@@ -24,7 +24,6 @@ private void Start()
 
     public virtual void EnterScene()
     {
-        Debug.Log("Unhandled EnterScene");
     }
 
     public virtual void CutsceneHandleCallback(string tag)
