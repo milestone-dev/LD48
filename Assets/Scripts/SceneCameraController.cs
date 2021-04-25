@@ -12,8 +12,9 @@ public class SceneCameraController : MonoBehaviour {
     private void Awake()
     {
         float size = Screen.height * 0.2f;
-        leftEdge = new Rect(0, size, size, Screen.height - size * 2);
-        rightEdge = new Rect(Screen.width - size, size, size, Screen.height - size);
+        float margin = 16;
+        leftEdge = new Rect(-margin, size, size, Screen.height - size * 2);
+        rightEdge = new Rect(Screen.width + margin - size, size, size, Screen.height - size);
     }
 
     public void Update()
