@@ -41,4 +41,25 @@ MonoBehaviour:
     RequiredSwitch: {fileID: 0}
     PreventingSwitch: {fileID: 0}
     tag: 
+  - Text: The Chief Engineer is ready
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 1f130766897e64d6e8450cbf9dcb669f, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: ab7f85aec072946ea8db130b8b3efd93, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: The Chief Researcher is ready
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 764f821ca9c2d4b008988cf64c6078cc, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: 3fcf5c1ccabe44d62bd55d35c434c247, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: I've activated the sonar system
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 92bfa61865c4649c6a77dd1a2c1a3ff5, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: f57766752c26440f08db857a680777d6, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
   Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}

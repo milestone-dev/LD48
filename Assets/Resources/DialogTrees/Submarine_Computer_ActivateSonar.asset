@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc62eef03d3de4921980cbebdfc9f719, type: 3}
+  m_Name: Submarine_Computer_ActivateSonar
+  m_EditorClassIdentifier: 
+  Options:
+  - Text: Exit
+    DisabledByDefault: 0
+    Cutscene: {fileID: 0}
+    DialogTree: {fileID: 11400000, guid: adaaf0be1bbe14622a4d132957883d1c, type: 2}
+    RequiredSwitch: {fileID: 0}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: Incorrect Option
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 8e87d31e8587041a1b5a90f96053fcbe, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 0}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: Correct Option
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 144d7ce0d0884442bbdcef025378891a, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: b9daf175dfb4a4087b96a0f2f6a7a2df, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  Character: {fileID: 11400000, guid: adeb4ffee7c5840f599317acad507d26, type: 2}

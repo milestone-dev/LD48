@@ -872,6 +872,14 @@ PrefabInstance:
       propertyPath: tooltipText
       value: Ship Computer
       objectReference: {fileID: 0}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.data[0].Cutscene
+      value: 
+      objectReference: {fileID: 11400000, guid: 8bb14690e1ec046d0a94be6492cc5ad9, type: 2}
     - target: {fileID: 1103114945248165073, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Size.x
       value: 6.75
@@ -978,15 +986,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7014903759367555202, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Size.x
-      value: 6.75
+      value: 1.6784024
       objectReference: {fileID: 0}
     - target: {fileID: 7014903759367555202, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Size.y
-      value: 3
+      value: 2.1890492
       objectReference: {fileID: 0}
     - target: {fileID: 7014903759367555202, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: -0.99980235
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014903759367555202, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.40547538
       objectReference: {fileID: 0}
     - target: {fileID: 7014903759367555202, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w

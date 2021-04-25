@@ -53,17 +53,19 @@ public class SceneObjectController : MonoBehaviour {
 
         if (GameController.InteractionState == GameInteractionState.NavigatingScene && Item)
         {
-            GameUIController.Instance.InventoryAddItem(Item);
-            if (ConsumeObject)
-            {
-                SceneState sceneScate = FindObjectOfType<SceneState>();
-                GameController.Log("adding", name, sceneScate);
-
-                if (sceneScate)
+            if (GameUIController.Instance.InventoryCanPickUpItem(Item)) { 
+                GameUIController.Instance.InventoryAddItem(Item);
+                if (ConsumeObject)
                 {
-                    sceneScate.DestroyedObjectNames.Add(name);
+                    SceneState sceneScate = FindObjectOfType<SceneState>();
+                    GameController.Log("adding", name, sceneScate);
+
+                    if (sceneScate)
+                    {
+                        sceneScate.DestroyedObjectNames.Add(name);
+                    }
+                    Destroy(gameObject);
                 }
-                Destroy(gameObject);
             }
         }
 

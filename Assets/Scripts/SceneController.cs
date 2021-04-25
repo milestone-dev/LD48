@@ -31,7 +31,12 @@ public class SceneController : MonoBehaviour {
             GameObject obj = GameObject.Find(name);
             GameController.Log(name, obj);
             if (obj)
+            {
                 Destroy(obj);
+            } else
+            {
+                Debug.LogError("Unable to destroy object named " + name);
+            }
         }
     }
 

@@ -10,6 +10,7 @@ public class GameUIController : MonoBehaviour {
     public GameObject InventoryToolbar;
     public GameObject InventoryItemTemplate;
     public List<SOInventoryItem> InventoryItems;
+    public List<SOInventoryItem> InventoryItemsArchive;
     [HideInInspector]
     public GameObject InventoryHeldItem;
 
@@ -97,6 +98,11 @@ public class GameUIController : MonoBehaviour {
         }
     }
 
+    public bool InventoryCanPickUpItem(SOInventoryItem item)
+    {
+        return !InventoryHasItem(item) && !InventoryArchiveHasItem(item);
+    }
+
     public void InventoryResetHeldItem()
     {
         InventoryHeldItem.GetComponent<Image>().raycastTarget = true;
@@ -106,14 +112,14 @@ public class GameUIController : MonoBehaviour {
 
     public void InventoryRemoveItem(string itemName)
     {
-        InventoryItems.RemoveAll(i => i.name.Equals(itemName));
-        InventoryRedrawItems();
+        InventoryRemoveItem(SOInventoryItem.Load(itemName));
     }
 
     public void InventoryRemoveItem(SOInventoryItem item)
     {
         if (InventoryHasItem(item))
         {
+            InventoryItemsArchive.Add(item);
             InventoryItems.Remove(item);
             InventoryRedrawItems();
         }
@@ -121,16 +127,12 @@ public class GameUIController : MonoBehaviour {
 
     public void InventoryAddItem(string itemName)
     {
-        if (!InventoryHasItemNamed(itemName))
-        {
-            InventoryItems.Add(SOInventoryItem.Load(itemName));
-            InventoryRedrawItems();
-        }
+        InventoryAddItem(SOInventoryItem.Load(itemName));
     }
 
     public void InventoryAddItem(SOInventoryItem item)
     {
-        if (!InventoryHasItem(item))
+        if (InventoryCanPickUpItem(item))
         {
             InventoryItems.Add(item);
             InventoryRedrawItems();
@@ -154,7 +156,12 @@ public class GameUIController : MonoBehaviour {
 
     public bool InventoryHasItemNamed(string itemName)
     {
-        return InventoryItems.Exists(i => i.name.Equals(itemName));
+        return InventoryHasItem(SOInventoryItem.Load(itemName));
+    }
+
+    public bool InventoryArchiveHasItem(SOInventoryItem item)
+    {
+        return InventoryItemsArchive.Exists(i => i.Equals(item));
     }
 
     public void InventoryObjectMouseClick(GameObject inventoryObject)
