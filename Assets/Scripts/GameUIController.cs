@@ -377,8 +377,8 @@ public class GameUIController : MonoBehaviour {
             return;
         }
 
-        float margin = 0;
-        float y = margin;
+        float margin = 16;
+        float y = 0;
         int i = 0;
         foreach (DialogTreeOption o in CurrentDialogTree.Options)
         {
@@ -390,7 +390,7 @@ public class GameUIController : MonoBehaviour {
                 option.GetComponent<Text>().text = o.Text;
                 option.name = o.Text;
                 option.GetComponent<GameUIObjectController>().index = i;
-                y += option.GetComponent<RectTransform>().rect.height;
+                y += option.GetComponent<RectTransform>().rect.height + margin;
                 option.transform.SetParent(DialogTreeToolbar.transform, true);
                 option.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
                 option.SetActive(true);
