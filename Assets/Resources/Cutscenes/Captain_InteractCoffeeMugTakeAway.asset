@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
+  m_Name: Captain_InteractCoffeeMugTakeAway
+  m_EditorClassIdentifier: 
+  Entries:
+  - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
+    Text: Taking away the dishes? Sure.
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5342185931872273929, guid: 2ed09b6669f254aeab5a7262a7f01a40, type: 3}
+          m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+          m_MethodName: CutsceneHandleCallback
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: RemoveCoffeeCup
+            m_BoolArgument: 0
+          m_CallState: 2
+  DialogTree: {fileID: 0}
+  SwitchToSet: {fileID: 0}
+  SwitchToClear: {fileID: 0}
+  ItemToGet: {fileID: 11400000, guid: 61bc5f3376f6a4bbeaa5cde8d1ec159e, type: 2}

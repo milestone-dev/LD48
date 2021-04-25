@@ -627,7 +627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6286501495837041310, guid: fe61e26671aa84916b67a1f31a6bc5d2, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6286501495837041310, guid: fe61e26671aa84916b67a1f31a6bc5d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -732,7 +732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1258609747846544109, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Delegates.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1258609747846544109, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Delegates.Array.data[0].eventID
@@ -1037,6 +1037,38 @@ PrefabInstance:
       propertyPath: tooltipText
       value: Coffee Mug
       objectReference: {fileID: 0}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.data[0].Cutscene
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f7fe762d2b0a4548991a1ad03ac2454, type: 2}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.data[1].Cutscene
+      value: 
+      objectReference: {fileID: 11400000, guid: 1df0559d81a384bee93de6a11e4e79b0, type: 2}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.data[2].Cutscene
+      value: 
+      objectReference: {fileID: 11400000, guid: bdc03c503184342189a49babb186a7d5, type: 2}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.data[1].ConsumeItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.data[0].RequiredSwitch
+      value: 
+      objectReference: {fileID: 11400000, guid: b4483f162c7954ec4b6251ca55524dbe, type: 2}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.data[1].RequiredSwitch
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 530487443644570600, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: Interactions.Array.data[1].RequiredItemHeld
+      value: 
+      objectReference: {fileID: 11400000, guid: 080602c8baae14af1b305ab826d82b76, type: 2}
     - target: {fileID: 1103114945248165073, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_Size.x
       value: 1.3333334
@@ -1056,6 +1088,14 @@ PrefabInstance:
     - target: {fileID: 1103114945248165073, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258609747846544109, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: m_Delegates.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258609747846544109, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+      propertyPath: m_Delegates.Array.data[0].eventID
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3488113279403248731, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
       propertyPath: m_RootOrder
@@ -1330,6 +1370,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3488113279403248731, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
   m_PrefabInstance: {fileID: 1032162077}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1088623294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5682418440831086077, guid: ed6f8976357084e9cb6d0d15a24e2386, type: 3}
+  m_PrefabInstance: {fileID: 877834197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1161180342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,7 +1415,7 @@ Transform:
   - {fileID: 769497314}
   - {fileID: 877834198}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1161180344
 MonoBehaviour:
@@ -1384,6 +1429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35eac3e49e45146cfabc9368413b3580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  State: {fileID: 0}
+  CoffeeCup: {fileID: 1088623294}
 --- !u!1001 &1184642387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1569,7 +1616,7 @@ GameObject:
   - component: {fileID: 1447644708}
   - component: {fileID: 1447644707}
   m_Layer: 0
-  m_Name: SubmarineEngineRoomSceneState
+  m_Name: SubmarineBridgeSceneState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1584,10 +1631,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1447644706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb13a517ea09e4138ac00b0b9b80de27, type: 3}
+  m_Script: {fileID: 11500000, guid: a5ed0c4a239bf4a33b3da28ebb8dbbd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraX: 0
+  DestroyedObjectNames: []
+  PickedUpCoffeeCup: 0
 --- !u!4 &1447644708
 Transform:
   m_ObjectHideFlags: 0
@@ -1600,7 +1649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1579034081
 PrefabInstance:

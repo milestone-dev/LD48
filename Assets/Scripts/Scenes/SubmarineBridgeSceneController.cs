@@ -3,20 +3,30 @@ using System.Collections;
 
 public class SubmarineBridgeSceneController : SceneController
 {
-    /*
-    public void InteractWithCaptain()
+    public SubmarineBridgeSceneState State;
+    public GameObject CoffeeCup;
+
+
+    public override void EnterScene()
     {
-        if (GameController.InteractionState != GameInteractionState.NavigatingScene)
+        base.EnterScene();
+        State = FindObjectOfType<SubmarineBridgeSceneState>();
+
+        if (State.PickedUpCoffeeCup)
+        {
+            Destroy(CoffeeCup);
+        }
+
+        DestroyConsumedObjectNames(State);
+    }
+
+    public override void CutsceneHandleCallback(string tag)
+    {
+        if (tag.Equals("RemoveCoffeeCup"))
+        {
+            Destroy(CoffeeCup);
+            State.PickedUpCoffeeCup = true;
             return;
-
-        if (!GameController.Instance.IsSwitchSet("CaptainIntroDone"))
-        {
-            StartCutscene("Submarine_Captain_Intro");
-        } else
-        {
-            StartCutscene("Submarine_Captain_Default");
-
         }
     }
-    */
 }

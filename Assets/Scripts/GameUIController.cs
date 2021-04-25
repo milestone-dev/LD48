@@ -110,6 +110,15 @@ public class GameUIController : MonoBehaviour {
         InventoryRedrawItems();
     }
 
+    public void InventoryRemoveItem(SOInventoryItem item)
+    {
+        if (InventoryHasItem(item))
+        {
+            InventoryItems.Remove(item);
+            InventoryRedrawItems();
+        }
+    }
+
     public void InventoryAddItem(string itemName)
     {
         if (!InventoryHasItemNamed(itemName))
@@ -126,6 +135,11 @@ public class GameUIController : MonoBehaviour {
             InventoryItems.Add(item);
             InventoryRedrawItems();
         }
+    }
+
+    public bool InventoryIsHoldingItem(SOInventoryItem item)
+    {
+        return InventoryHeldItem && InventoryHeldItem.name.Equals(item.name);
     }
 
     public bool InventoryIsHoldingItemNamed(string itemName)
@@ -270,7 +284,7 @@ public class GameUIController : MonoBehaviour {
                         break;
                     } else
                     {
-                        GameController.Log("Can't skip yet", entryDuration, remainingTimeDuration);
+                        //GameController.Log("Can't skip yet", entryDuration, remainingTimeDuration);
                     }
                 }
                 // Yield to return out of the Ienumeration
@@ -278,14 +292,14 @@ public class GameUIController : MonoBehaviour {
             }
             // Always clear up and hide dialog
             if (cutscene.SwitchToSet)
-            {
                 GameController.Instance.SetSwitch(cutscene.SwitchToSet);
-            }
 
             if (cutscene.SwitchToClear)
-            {
                 GameController.Instance.ClearSwitch(cutscene.SwitchToClear);
-            }
+
+            if (cutscene.ItemToGet)
+                GameUIController.Instance.InventoryAddItem(cutscene.ItemToGet);
+
             CutsceneClearDialog();
             DialogToolbar.SetActive(false);
         }
@@ -412,12 +426,24 @@ public class GameUIController : MonoBehaviour {
 
     private bool DialogShouldIncludeOption(DialogTreeOption option)
     {
+        bool allow = true;
         if (option.RequiredSwitch)
         {
-            return GameController.Instance.IsSwitchSet(option.RequiredSwitch);
+            if (!GameController.Instance.IsSwitchSet(option.RequiredSwitch))
+            {
+                allow = false;
+            }
         }
 
-        return true;
+        if (option.PreventingSwitch)
+        {
+            if (GameController.Instance.IsSwitchSet(option.PreventingSwitch))
+            {
+                allow = false;
+            }
+        }
+
+        return allow;
 
         // TODO?!?!?!
         /*

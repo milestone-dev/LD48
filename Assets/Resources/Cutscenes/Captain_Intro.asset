@@ -10,14 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
-  m_Name: Submarine_Captain_Drinking
+  m_Name: Captain_Intro
   m_EditorClassIdentifier: 
   Entries:
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
-    Text: "Coffee of course.\L\L Well, I was, now it's cold."
+    Text: Hey kid, how does it feel to be on a real boat for once, away from your
+      safe desk?
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 3
     Callback:
       m_PersistentCalls:
         m_Calls: []
   DialogTree: {fileID: 11400000, guid: 3f1535eaa792e4fbf8932e62f0aba205, type: 2}
+  SwitchToSet: {fileID: 11400000, guid: 1b7ab6b3ebd6742fb9d05b013c0163ef, type: 2}
+  SwitchToClear: {fileID: 0}
+  ItemToGet: {fileID: 0}

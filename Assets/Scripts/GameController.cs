@@ -40,11 +40,12 @@ public class GameController : MonoBehaviour {
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.activeSceneChanged += OnSceneChanged;
         CurrentSceneController = FindObjectOfType<SceneController>();
+        GameController.Log("GameController Instantiated.");
     }
 
     private void OnSceneChanged(Scene currentScene, Scene nextScene)
     {
-        GameController.Log("Scene Changed", currentScene, nextScene);
+        GameController.Log("Scene Changed!", currentScene, nextScene);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -61,11 +62,12 @@ public class GameController : MonoBehaviour {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 
-    public static void CutsceneHandleCallback(string info)
+    public static void CutsceneHandleCallback(string tag)
     {
+        GameController.Log("CutsceneHandleCallback", tag, GameController.Instance.CurrentSceneController);
         if (GameController.Instance && GameController.Instance.CurrentSceneController)
         {
-            GameController.Instance.CurrentSceneController.CutsceneHandleCallback(info);
+            GameController.Instance.CurrentSceneController.CutsceneHandleCallback(tag);
         }
     }
 

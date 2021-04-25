@@ -15,8 +15,11 @@ public enum SceneObjectType
 [Serializable]
 public struct SceneObjectInteraction
 {
-    public SOSwitch RequiredSwitch;
     public SOCutscene Cutscene;
+    public SOInventoryItem RequiredItemHeld;
+    public bool ConsumeItem;
+    public SOSwitch RequiredSwitch;
+    public bool ClearSwitch;
 }
 
 public class SceneObjectController : MonoBehaviour {
@@ -24,6 +27,7 @@ public class SceneObjectController : MonoBehaviour {
     public string tooltipText;
     public SceneObjectType type;
     public SOInventoryItem Item;
+    public bool ConsumeObject;
     public List<SceneObjectInteraction> Interactions;
 
     private void OnMouseEnter()
@@ -48,15 +52,46 @@ public class SceneObjectController : MonoBehaviour {
             return;
 
         if (GameController.InteractionState == GameInteractionState.NavigatingScene && Item)
+        {
             GameUIController.Instance.InventoryAddItem(Item);
+            if (ConsumeObject)
+            {
+                SceneState sceneScate = FindObjectOfType<SceneState>();
+                GameController.Log("adding", name, sceneScate);
+
+                if (sceneScate)
+                {
+                    sceneScate.DestroyedObjectNames.Add(name);
+                }
+                Destroy(gameObject);
+            }
+        }
 
         foreach(SceneObjectInteraction interaction in Interactions)
         {
-            if (!interaction.RequiredSwitch || GameController.Instance.IsSwitchSet(interaction.RequiredSwitch)) {
+            bool accept = true;
+            if (interaction.RequiredSwitch && !GameController.Instance.IsSwitchSet(interaction.RequiredSwitch))
+                accept = false;
+
+            if (interaction.RequiredItemHeld && !GameUIController.Instance.InventoryIsHoldingItem(interaction.RequiredItemHeld))
+                accept = false;
+
+            if (accept)
+            {
+                if (interaction.ConsumeItem)
+                {
+                    GameUIController.Instance.InventoryRemoveItem(interaction.RequiredItemHeld);
+                }
+                if (interaction.ClearSwitch)
+                {
+                    GameController.Instance.ClearSwitch(interaction.RequiredSwitch);
+                }
                 GameUIController.Instance.CutsceneStart(interaction.Cutscene);
-                break;
+                return;
             }
         }
+
+        GameController.Log("No acceptable interaction for", name);
     }
 }
 

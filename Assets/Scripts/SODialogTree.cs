@@ -11,6 +11,7 @@ public struct DialogTreeOption
     public SOCutscene Cutscene;
     public SODialogTree DialogTree;
     public SOSwitch RequiredSwitch;
+    public SOSwitch PreventingSwitch;
     public string tag;
 }
 

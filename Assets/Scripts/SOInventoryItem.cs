@@ -11,7 +11,12 @@ public class SOInventoryItem : ScriptableObject
 
     public static SOInventoryItem Load(string name)
     {
-        return Resources.Load<SOInventoryItem>("Items/" + name);
+        SOInventoryItem item = Resources.Load<SOInventoryItem>("Items/" + name);
+        if (!item)
+        {
+            Debug.LogError("SOInventoryItem failed:" + name);
+        }
+        return item;
     }
 }
 

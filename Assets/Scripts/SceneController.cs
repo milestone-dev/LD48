@@ -5,15 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour {
 
-
-private void Start()
+    private void Start()
     {
         GameController.Instantiate();
         EnterScene();
     }
 
+    private void Update()
+    {
+        if (!GameController.Instance)
+        {
+            GameController.Instantiate();
+        }
+    }
+
     public virtual void EnterScene()
     {
+        // Nothing should happen here since we don't know the state.
+    }
+
+    public void DestroyConsumedObjectNames(SceneState state)
+    {
+        foreach (string name in state.DestroyedObjectNames)
+        {
+            GameObject obj = GameObject.Find(name);
+            GameController.Log(name, obj);
+            if (obj)
+                Destroy(obj);
+        }
     }
 
     public virtual void ExitToScene(string sceneName)

@@ -22,6 +22,7 @@ public class SOCutscene : ScriptableObject
     public SODialogTree DialogTree;
     public SOSwitch SwitchToSet;
     public SOSwitch SwitchToClear;
+    public SOInventoryItem ItemToGet;
 
     public static SOCutscene Load(string name)
     {

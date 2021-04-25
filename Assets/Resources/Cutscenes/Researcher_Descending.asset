@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
-  m_Name: Submarine_Researcher_Descending
+  m_Name: Researcher_Descending
   m_EditorClassIdentifier: 
   Entries:
   - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
@@ -44,3 +44,6 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DialogTree: {fileID: 11400000, guid: fcafabb9d86ef4522b11147de2fa8997, type: 2}
+  SwitchToSet: {fileID: 0}
+  SwitchToClear: {fileID: 0}
+  ItemToGet: {fileID: 0}

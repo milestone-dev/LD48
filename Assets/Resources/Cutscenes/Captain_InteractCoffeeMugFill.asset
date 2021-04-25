@@ -10,15 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
-  m_Name: Submarine_Captain_InteractCoffeeMug
+  m_Name: Captain_InteractCoffeeMugFill
   m_EditorClassIdentifier: 
   Entries:
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
-    Text: Hey, I haven't finished that yet.
+    Text: Great, fresh coffee!
     AudioClip: {fileID: 0}
     ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
-    Text: It's gone cold, so it's gonna take a while. But you'll never see me throw out coffee.
+    Text: '*slurp slurp*'
     AudioClip: {fileID: 0}
     ExtraDuration: 4
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
   DialogTree: {fileID: 0}
+  SwitchToSet: {fileID: 11400000, guid: b4483f162c7954ec4b6251ca55524dbe, type: 2}
+  SwitchToClear: {fileID: 0}
+  ItemToGet: {fileID: 0}
