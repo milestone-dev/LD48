@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum SceneObjectType
 {
@@ -10,12 +12,19 @@ public enum SceneObjectType
     Exit
 }
 
+[Serializable]
+public struct SceneObjectInteraction
+{
+    public SOSwitch RequiredSwitch;
+    public SOCutscene Cutscene;
+}
+
 public class SceneObjectController : MonoBehaviour {
 
     public string tooltipText;
     public SceneObjectType type;
-    public SOCutscene Cutscene;
     public SOInventoryItem Item;
+    public List<SceneObjectInteraction> Interactions;
 
     private void OnMouseEnter()
     {
@@ -41,8 +50,13 @@ public class SceneObjectController : MonoBehaviour {
         if (GameController.InteractionState == GameInteractionState.NavigatingScene && Item)
             GameUIController.Instance.InventoryAddItem(Item);
 
-        if (GameController.InteractionState == GameInteractionState.NavigatingScene && Cutscene)
-            GameUIController.Instance.CutsceneStart(Cutscene);
+        foreach(SceneObjectInteraction interaction in Interactions)
+        {
+            if (!interaction.RequiredSwitch || GameController.Instance.IsSwitchSet(interaction.RequiredSwitch)) {
+                GameUIController.Instance.CutsceneStart(interaction.Cutscene);
+                break;
+            }
+        }
     }
 }
 

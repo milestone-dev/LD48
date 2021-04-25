@@ -22,5 +22,5 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DialogTree: {fileID: 11400000, guid: 3f1535eaa792e4fbf8932e62f0aba205, type: 2}
-  SwitchToSet: {fileID: 0}
+  SwitchToSet: {fileID: 11400000, guid: 1b7ab6b3ebd6742fb9d05b013c0163ef, type: 2}
   SwitchToClear: {fileID: 0}

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SubmarineBridgeSceneController : SceneController
 {
+    /*
     public void InteractWithCaptain()
     {
         if (GameController.InteractionState != GameInteractionState.NavigatingScene)
@@ -17,4 +18,5 @@ public class SubmarineBridgeSceneController : SceneController
 
         }
     }
+    */
 }
