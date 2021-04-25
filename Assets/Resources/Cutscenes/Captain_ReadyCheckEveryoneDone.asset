@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
-  m_Name: Engineer_Yourself
+  m_Name: Captain_ReadyCheckEveryoneDone
   m_EditorClassIdentifier: 
   Entries:
-  - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
-    Text: Um, not sure what there's to tell. Name's Toby. I keep the ship running.
+  - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
+    Text: OK, let's do this.
     AudioClip: {fileID: 0}
     ExtraDuration: 3
     Callback:
       m_PersistentCalls:
         m_Calls: []
-  - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
-    Text: Oh, yeah! And I have a dog called Scraps!
+  - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
+    Text: END OF ACT 1
     AudioClip: {fileID: 0}
-    ExtraDuration: 3
+    ExtraDuration: 5
     Callback:
       m_PersistentCalls:
         m_Calls: []
-  DialogTree: {fileID: 11400000, guid: 2b19aa3d15e684002afdb26d3042296b, type: 2}
-  SwitchToSet: {fileID: 11400000, guid: 02637ee4bd3984f599b5f9a05159de79, type: 2}
+  DialogTree: {fileID: 0}
+  SwitchToSet: {fileID: 0}
   SwitchToClear: {fileID: 0}
   ItemToGet: {fileID: 0}

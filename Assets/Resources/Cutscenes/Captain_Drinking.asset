@@ -20,7 +20,14 @@ MonoBehaviour:
     Callback:
       m_PersistentCalls:
         m_Calls: []
+  - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
+    Text: I don't like most things, but I like coffee.
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
   DialogTree: {fileID: 11400000, guid: 3f1535eaa792e4fbf8932e62f0aba205, type: 2}
-  SwitchToSet: {fileID: 0}
+  SwitchToSet: {fileID: 11400000, guid: b37072268ec9446a8869444c2a18a902, type: 2}
   SwitchToClear: {fileID: 0}
   ItemToGet: {fileID: 0}

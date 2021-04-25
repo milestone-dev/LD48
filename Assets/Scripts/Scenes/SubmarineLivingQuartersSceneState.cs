@@ -3,5 +3,13 @@ using System.Collections;
 
 public class SubmarineLivingQuartersSceneState : SceneState
 {
-    public bool IsSpecial;
+    private void Awake()
+    {
+        if (FindObjectsOfType<SubmarineLivingQuartersSceneState>().Length > 1)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+    }
 }

@@ -43,6 +43,27 @@ public class GameController : MonoBehaviour {
         GameController.Log("GameController Instantiated.");
     }
 
+    private void Update()
+    {
+        // TODO: A bit of a hack but totally fine for now
+
+        if (!IsSwitchSet("ComputerKnowPassword") &&
+            IsSwitchSet("CaptainKnowPasswordHint") &&
+            IsSwitchSet("EngineerKnowPasswordHint") &&
+            IsSwitchSet("ResearcherKnowPasswordHint"))
+        {
+            SetSwitch("ComputerKnowPassword");
+        }
+
+        if (!IsSwitchSet("EveryoneReady") &&
+            IsSwitchSet("EngineerReady") &&
+            IsSwitchSet("ResearcherReady") &&
+            IsSwitchSet("SonarReady"))
+        {
+            SetSwitch("EveryoneReady");
+        }
+    }
+
     private void OnSceneChanged(Scene currentScene, Scene nextScene)
     {
         GameController.Log("Scene Changed!", currentScene, nextScene);

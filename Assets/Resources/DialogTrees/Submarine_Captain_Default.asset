@@ -25,6 +25,13 @@ MonoBehaviour:
     Cutscene: {fileID: 11400000, guid: 17e6bc5eb59af44aaba78bc5658cb8d0, type: 2}
     DialogTree: {fileID: 0}
     RequiredSwitch: {fileID: 0}
+    PreventingSwitch: {fileID: 11400000, guid: f57766752c26440f08db857a680777d6, type: 2}
+    tag: 
+  - Text: Why are we not descending?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: fae8fa267b0ee4897924419ad0d614c5, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: f57766752c26440f08db857a680777d6, type: 2}
     PreventingSwitch: {fileID: 0}
     tag: 
   - Text: What are you drinking?
@@ -60,6 +67,13 @@ MonoBehaviour:
     Cutscene: {fileID: 11400000, guid: 92bfa61865c4649c6a77dd1a2c1a3ff5, type: 2}
     DialogTree: {fileID: 0}
     RequiredSwitch: {fileID: 11400000, guid: f57766752c26440f08db857a680777d6, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: Everything is ready for descent
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 0fce06f6ae65f4bf1b5cb39b35d01b7d, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: e830adea2c44c4aaba1e91d6d2aeeab0, type: 2}
     PreventingSwitch: {fileID: 0}
     tag: 
   Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}

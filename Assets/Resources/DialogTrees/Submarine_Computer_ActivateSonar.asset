@@ -20,18 +20,39 @@ MonoBehaviour:
     RequiredSwitch: {fileID: 0}
     PreventingSwitch: {fileID: 0}
     tag: 
-  - Text: Incorrect Option
-    DisabledByDefault: 0
-    Cutscene: {fileID: 11400000, guid: 8e87d31e8587041a1b5a90f96053fcbe, type: 2}
-    DialogTree: {fileID: 0}
-    RequiredSwitch: {fileID: 0}
-    PreventingSwitch: {fileID: 0}
-    tag: 
-  - Text: Correct Option
+  - Text: CoffeeNobelScraps?
     DisabledByDefault: 0
     Cutscene: {fileID: 11400000, guid: 144d7ce0d0884442bbdcef025378891a, type: 2}
     DialogTree: {fileID: 0}
     RequiredSwitch: {fileID: 11400000, guid: b9daf175dfb4a4087b96a0f2f6a7a2df, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: Coffee?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 8e87d31e8587041a1b5a90f96053fcbe, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: b37072268ec9446a8869444c2a18a902, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: Nobel?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 8e87d31e8587041a1b5a90f96053fcbe, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: 327829a4ad5a24d00ab9bfdfc10e0a38, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: Scraps?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 8e87d31e8587041a1b5a90f96053fcbe, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 11400000, guid: 02637ee4bd3984f599b5f9a05159de79, type: 2}
+    PreventingSwitch: {fileID: 0}
+    tag: 
+  - Text: Password?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 8e87d31e8587041a1b5a90f96053fcbe, type: 2}
+    DialogTree: {fileID: 0}
+    RequiredSwitch: {fileID: 0}
     PreventingSwitch: {fileID: 0}
     tag: 
   Character: {fileID: 11400000, guid: adeb4ffee7c5840f599317acad507d26, type: 2}

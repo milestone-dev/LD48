@@ -285,7 +285,7 @@ public class GameUIController : MonoBehaviour {
                 remainingTimeDuration -= Time.deltaTime;
                 if (Input.GetMouseButtonUp(0))
                 {
-                    if (entryDuration - remainingTimeDuration > 0.3)
+                    if (entryDuration - remainingTimeDuration > 0.15)
                     {
                         GetComponent<AudioSource>().Stop();
                         break;
