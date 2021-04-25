@@ -18,7 +18,17 @@ MonoBehaviour:
     Cutscene: {fileID: 0}
     DialogTree: {fileID: 0}
     tag: 
-  - Text: How's she running?
+  - Text: Impressive ship!
+    DisabledByDefault: 0
+    Cutscene: {fileID: 0}
+    DialogTree: {fileID: 0}
+    tag: 
+  - Text: Do you know why we are not descending?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 0}
+    DialogTree: {fileID: 0}
+    tag: 
+  - Text: Can you tell me about yourself?
     DisabledByDefault: 0
     Cutscene: {fileID: 0}
     DialogTree: {fileID: 0}

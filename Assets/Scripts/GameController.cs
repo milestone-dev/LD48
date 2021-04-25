@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         Instance = this;
         State = GetComponent<GameState>();
+        Debug.Log(State);
     }
 
     public static void CutsceneHandleCallback(string info)

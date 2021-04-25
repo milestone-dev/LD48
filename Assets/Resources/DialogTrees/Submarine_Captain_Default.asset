@@ -23,4 +23,14 @@ MonoBehaviour:
     Cutscene: {fileID: 11400000, guid: 17e6bc5eb59af44aaba78bc5658cb8d0, type: 2}
     DialogTree: {fileID: 0}
     tag: 
+  - Text: What are you drinking?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 61a7507ceebe343e0946e79d2551cb2e, type: 2}
+    DialogTree: {fileID: 0}
+    tag: 
+  - Text: Can you tell me about the mission?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: d9e5d2b0b86764e0383f5eb885a44dbb, type: 2}
+    DialogTree: {fileID: 0}
+    tag: 
   Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}

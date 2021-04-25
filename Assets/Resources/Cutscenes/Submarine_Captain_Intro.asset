@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
-  m_Name: Submarine_Engineer_Default
+  m_Name: Submarine_Captain_Default
   m_EditorClassIdentifier: 
   Entries:
-  - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
-    Text: 'Whats'' up?
-
-'
+  - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
+    Text: Yeah?
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 1
     Callback:
       m_PersistentCalls:
         m_Calls: []
-  DialogTree: {fileID: 11400000, guid: 2b19aa3d15e684002afdb26d3042296b, type: 2}
+  DialogTree: {fileID: 11400000, guid: 3f1535eaa792e4fbf8932e62f0aba205, type: 2}

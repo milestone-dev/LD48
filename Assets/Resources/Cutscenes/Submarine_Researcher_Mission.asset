@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
+  m_Name: Submarine_Researcher_Mission
+  m_EditorClassIdentifier: 
+  Entries:
+  - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
+    Text: Well. I'll have you know it's an absolute dumpster fire so far! If it wasn't
+      for the unique opportunity I would never have wasted my time on this
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
+    Text: However, the signature of this... signal we've been sent to investigate
+      is unlike anything I've ever seen before.
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
+    Text: The readings look like natural radiation, but the signals come an go in
+      waves forming a repeating pattern. This is completely unprecedented.
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  DialogTree: {fileID: 11400000, guid: fcafabb9d86ef4522b11147de2fa8997, type: 2}

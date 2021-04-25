@@ -18,9 +18,19 @@ MonoBehaviour:
     Cutscene: {fileID: 0}
     DialogTree: {fileID: 0}
     tag: 
-  - Text: How is your research coming along?
+  - Text: What do you think about this expedition?
     DisabledByDefault: 0
-    Cutscene: {fileID: 0}
+    Cutscene: {fileID: 11400000, guid: 9d97487a65161434ead52d43d892ee6d, type: 2}
+    DialogTree: {fileID: 0}
+    tag: 
+  - Text: Are you ready to descend?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: 3ad89526817194d749c17ff85908093a, type: 2}
+    DialogTree: {fileID: 0}
+    tag: 
+  - Text: Can you tell me about yourself?
+    DisabledByDefault: 0
+    Cutscene: {fileID: 11400000, guid: aa25adad348f24f08871bbdfa9c52aad, type: 2}
     DialogTree: {fileID: 0}
     tag: 
   Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}

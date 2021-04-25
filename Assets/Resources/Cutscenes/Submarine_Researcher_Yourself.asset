@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
-  m_Name: Submarine_Engineer_Default
+  m_Name: Submarine_Researcher_Yourself
   m_EditorClassIdentifier: 
   Entries:
-  - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
-    Text: 'Whats'' up?
-
-'
+  - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
+    Text: "You haven't heard of Nobel Price lauerat Amadeus Lundstr\xF6m? I don't
+      have time to share my backstory with junior staff."
     AudioClip: {fileID: 0}
     ExtraDuration: 2
     Callback:
       m_PersistentCalls:
         m_Calls: []
-  DialogTree: {fileID: 11400000, guid: 2b19aa3d15e684002afdb26d3042296b, type: 2}
+  DialogTree: {fileID: 11400000, guid: fcafabb9d86ef4522b11147de2fa8997, type: 2}

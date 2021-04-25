@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
+  m_Name: Submarine_Researcher_Descending
+  m_EditorClassIdentifier: 
+  Entries:
+  - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
+    Text: Absolutely not! And I've already told the captain as much.
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
+    Text: It is absolutely vitalt that we retrieve sample of the water at this level,
+      so we can compare as we descend.
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
+    Text: However, because of the completely undreasonable timeline and the lazy
+      dock crew, half of my lab equipment is missing!
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
+    Text: We are not gong anywhere until someone can find me a vial!
+    AudioClip: {fileID: 0}
+    ExtraDuration: 2
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  DialogTree: {fileID: 11400000, guid: fcafabb9d86ef4522b11147de2fa8997, type: 2}
