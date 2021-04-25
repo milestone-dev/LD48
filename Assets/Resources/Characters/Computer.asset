@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d4eaffb51c445d990779530f1a84d6, type: 3}
   m_Name: Computer
   m_EditorClassIdentifier: 
-  avatar: {fileID: 21300000, guid: 2163684395d9548548be1eb00d0e54ef, type: 3}
-  textColor: {r: 0.9150943, g: 0.8106894, b: 0.35826805, a: 1}
+  avatar: {fileID: 21300000, guid: 1de82705a99b94e209a9babbedd77e0a, type: 3}
+  textColor: {r: 0.49019608, g: 0.9372549, b: 0.69411767, a: 1}
   IdleAnimationClip: {fileID: 0}
   TalkAnimationClip: {fileID: 0}
