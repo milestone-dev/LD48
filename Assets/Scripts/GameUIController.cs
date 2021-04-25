@@ -277,6 +277,15 @@ public class GameUIController : MonoBehaviour {
                 yield return 0;
             }
             // Always clear up and hide dialog
+            if (cutscene.SwitchToSet)
+            {
+                GameController.Instance.SetSwitch(cutscene.SwitchToSet);
+            }
+
+            if (cutscene.SwitchToClear)
+            {
+                GameController.Instance.ClearSwitch(cutscene.SwitchToClear);
+            }
             CutsceneClearDialog();
             DialogToolbar.SetActive(false);
         }
@@ -403,11 +412,21 @@ public class GameUIController : MonoBehaviour {
 
     private bool DialogShouldIncludeOption(DialogTreeOption option)
     {
+        if (option.RequiredSwitch)
+        {
+            return GameController.Instance.IsSwitchSet(option.RequiredSwitch);
+        }
+
+        return true;
+
+        // TODO?!?!?!
+        /*
         if ((option.DisabledByDefault && !DialogEnabledOptions.Contains(option.tag)) || DialogDisabledOptions.Contains(option.tag))
         {
             return false;
         }
         return true;
+        */
     }
 
     public void DialogEnableOption(string tag = "")

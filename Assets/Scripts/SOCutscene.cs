@@ -20,6 +20,8 @@ public class SOCutscene : ScriptableObject
 {
     public CutsceneEntry[] Entries;
     public SODialogTree DialogTree;
+    public SOSwitch SwitchToSet;
+    public SOSwitch SwitchToClear;
 
     public static SOCutscene Load(string name)
     {

@@ -10,6 +10,7 @@ public struct DialogTreeOption
     public bool DisabledByDefault;
     public SOCutscene Cutscene;
     public SODialogTree DialogTree;
+    public SOSwitch RequiredSwitch;
     public string tag;
 }
 

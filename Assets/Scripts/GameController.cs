@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
     public static GameController Instance;
     public SceneController CurrentSceneController;
     public GameState State;
+    public List<SOSwitch> Switches;
     public static GameInteractionState InteractionState = GameInteractionState.NavigatingScene;
 
     public static void Instantiate()
@@ -71,6 +72,40 @@ public class GameController : MonoBehaviour {
     public static void Log(params object[] messages)
     {
         Debug.Log(string.Join(" ", messages));
+    }
+
+    public bool IsSwitchSet(string switchName)
+    {
+        return Switches.Exists(flag => flag.name.Equals(switchName));
+    }
+
+    public bool IsSwitchSet(SOSwitch sw)
+    {
+        return Switches.Contains(sw);
+    }
+
+    public void SetSwitch(string switchName)
+    {
+        if (!Switches.Exists(sw => sw.name.Equals(switchName))) {
+            Switches.Add(SOSwitch.Load(switchName));
+        }
+    }
+    public void SetSwitch(SOSwitch sw)
+    {
+        if (!Switches.Contains(sw))
+        {
+            Switches.Add(sw);
+        }
+    }
+
+    public void ClearSwitch(string switchName)
+    {
+        Switches.RemoveAll(sw => sw.name.Equals(switchName));
+    }
+
+    public void ClearSwitch(SOSwitch sw)
+    {
+        Switches.Remove(sw);
     }
 
 }

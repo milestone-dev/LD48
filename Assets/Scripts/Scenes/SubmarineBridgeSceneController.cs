@@ -8,10 +8,9 @@ public class SubmarineBridgeSceneController : SceneController
         if (GameController.InteractionState != GameInteractionState.NavigatingScene)
             return;
 
-        if (!GameController.Instance.State.CaptainIntroComplete)
+        if (!GameController.Instance.IsSwitchSet("CaptainIntroDone"))
         {
             StartCutscene("Submarine_Captain_Intro");
-            GameController.Instance.State.CaptainIntroComplete = true;
         } else
         {
             StartCutscene("Submarine_Captain_Default");
