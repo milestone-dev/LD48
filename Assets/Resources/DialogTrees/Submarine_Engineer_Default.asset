@@ -20,17 +20,17 @@ MonoBehaviour:
     tag: 
   - Text: Impressive ship!
     DisabledByDefault: 0
-    Cutscene: {fileID: 0}
+    Cutscene: {fileID: 11400000, guid: 8c90dca6110814398a7b75ed3782f1e0, type: 2}
     DialogTree: {fileID: 0}
     tag: 
   - Text: Do you know why we are not descending?
     DisabledByDefault: 0
-    Cutscene: {fileID: 0}
+    Cutscene: {fileID: 11400000, guid: 5a4f6ff80954e4471b0bf0d54394843a, type: 2}
     DialogTree: {fileID: 0}
     tag: 
   - Text: Can you tell me about yourself?
     DisabledByDefault: 0
-    Cutscene: {fileID: 0}
+    Cutscene: {fileID: 11400000, guid: 1d0043690773c47e39a324d41c3723b7, type: 2}
     DialogTree: {fileID: 0}
     tag: 
   Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}

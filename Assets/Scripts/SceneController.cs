@@ -18,6 +18,9 @@ private void Start()
 
     public virtual void ExitToScene(string sceneName)
     {
+        if (GameController.InteractionState != GameInteractionState.NavigatingScene)
+            return;
+
         GameController.Instance.TransitionToScene(sceneName);
     }
 

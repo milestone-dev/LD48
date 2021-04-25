@@ -262,10 +262,16 @@ public class GameUIController : MonoBehaviour {
             while (remainingTimeDuration > 0)
             {
                 remainingTimeDuration -= Time.deltaTime;
-                if (entryDuration - remainingTimeDuration > 0.3 && Input.GetMouseButtonUp(0))
+                if (Input.GetMouseButtonUp(0))
                 {
-                    GetComponent<AudioSource>().Stop();
-                    break;
+                    if (entryDuration - remainingTimeDuration > 0.3)
+                    {
+                        GetComponent<AudioSource>().Stop();
+                        break;
+                    } else
+                    {
+                        GameController.Log("Can't skip yet", entryDuration, remainingTimeDuration);
+                    }
                 }
                 // Yield to return out of the Ienumeration
                 yield return 0;
