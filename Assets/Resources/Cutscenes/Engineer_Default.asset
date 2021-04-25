@@ -16,7 +16,7 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
     Text: What's up?
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 4
     Callback:
       m_PersistentCalls:
         m_Calls: []

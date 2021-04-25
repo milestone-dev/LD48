@@ -18,7 +18,7 @@ MonoBehaviour:
       Bad thing is I can't for the life of me find my specialized wrench. Let me
       know if you find it, yeah?
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 12
     Callback:
       m_PersistentCalls:
         m_Calls: []

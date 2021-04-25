@@ -16,7 +16,7 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
     Text: Absolutely not! And I've already told the captain as much.
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 6
     Callback:
       m_PersistentCalls:
         m_Calls: []
@@ -24,7 +24,7 @@ MonoBehaviour:
     Text: It is absolutely vitalt that we retrieve sample of the water at this level,
       so we can compare as we descend.
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 6
     Callback:
       m_PersistentCalls:
         m_Calls: []
@@ -32,14 +32,14 @@ MonoBehaviour:
     Text: However, because of the completely undreasonable timeline and the lazy
       dock crew, half of my lab equipment is missing!
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 6
     Callback:
       m_PersistentCalls:
         m_Calls: []
   - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
     Text: We are not gong anywhere until someone can find me a vial!
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 6
     Callback:
       m_PersistentCalls:
         m_Calls: []

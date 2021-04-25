@@ -77,6 +77,12 @@ public class GameController : MonoBehaviour {
         Debug.Log("Scene Controller" + CurrentSceneController);
     }
 
+    public static void GoToScene(string sceneName)
+    {
+        // TODO Add fading coroutines yay
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+    }
+
     public void TransitionToScene(string sceneName)
     {
         // TODO Add fading coroutines yay

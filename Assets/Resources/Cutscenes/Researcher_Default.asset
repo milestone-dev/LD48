@@ -16,7 +16,7 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
     Text: What is it, Jr.Officer?
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 4
     Callback:
       m_PersistentCalls:
         m_Calls: []

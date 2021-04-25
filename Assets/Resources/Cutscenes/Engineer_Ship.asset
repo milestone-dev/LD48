@@ -17,7 +17,7 @@ MonoBehaviour:
     Text: She's a beauty, isn't she? Amadaus and I have taken the Linneaus on over
       200 missions, and she has never let us down.
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 12
     Callback:
       m_PersistentCalls:
         m_Calls: []

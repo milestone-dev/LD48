@@ -16,7 +16,7 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
     Text: This was all in your briefing kid, you're lucky I'm bored.
     AudioClip: {fileID: 0}
-    ExtraDuration: 3
+    ExtraDuration: 8
     Callback:
       m_PersistentCalls:
         m_Calls: []
@@ -25,7 +25,7 @@ MonoBehaviour:
       Then they tell us that the location is at the end of the Botina trench, and
       that we need to depart right away."
     AudioClip: {fileID: 0}
-    ExtraDuration: 8
+    ExtraDuration: 10
     Callback:
       m_PersistentCalls:
         m_Calls: []
@@ -33,7 +33,7 @@ MonoBehaviour:
     Text: This 'signal' we're supposed to find down there is at 3.2k, basically at
       the bottom.
     AudioClip: {fileID: 0}
-    ExtraDuration: 5
+    ExtraDuration: 8
     Callback:
       m_PersistentCalls:
         m_Calls: []
@@ -41,7 +41,7 @@ MonoBehaviour:
     Text: Ol' Linnaeus and I will get us there though. That's why they're paying
       us the big bucks. We'll begin descent as soon as everyone reports in.
     AudioClip: {fileID: 0}
-    ExtraDuration: 4
+    ExtraDuration: 8
     Callback:
       m_PersistentCalls:
         m_Calls: []

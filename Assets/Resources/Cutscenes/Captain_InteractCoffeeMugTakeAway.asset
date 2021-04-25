@@ -16,7 +16,7 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
     Text: Taking away the dishes? Sure.
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 4
     Callback:
       m_PersistentCalls:
         m_Calls:

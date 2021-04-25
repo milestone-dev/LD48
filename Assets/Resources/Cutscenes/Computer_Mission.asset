@@ -16,7 +16,7 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: adeb4ffee7c5840f599317acad507d26, type: 2}
     Text: <Mission Info Placeholder>
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 12
     Callback:
       m_PersistentCalls:
         m_Calls: []

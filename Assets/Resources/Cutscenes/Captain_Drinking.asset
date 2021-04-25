@@ -16,14 +16,14 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
     Text: "Coffee of course.\L\L Well, I was, now it's cold."
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 4
     Callback:
       m_PersistentCalls:
         m_Calls: []
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
     Text: I don't like most things, but I like coffee.
     AudioClip: {fileID: 0}
-    ExtraDuration: 2
+    ExtraDuration: 4
     Callback:
       m_PersistentCalls:
         m_Calls: []

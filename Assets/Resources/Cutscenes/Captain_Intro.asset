@@ -17,7 +17,7 @@ MonoBehaviour:
     Text: Hey kid, how does it feel to be on a real boat for once, away from your
       safe desk?
     AudioClip: {fileID: 0}
-    ExtraDuration: 3
+    ExtraDuration: 5
     Callback:
       m_PersistentCalls:
         m_Calls: []
