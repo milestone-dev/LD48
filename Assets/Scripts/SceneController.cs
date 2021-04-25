@@ -8,19 +8,8 @@ public class SceneController : MonoBehaviour {
 
 private void Start()
     {
-        if (!GameController.Instance)
-        {
-            Instantiate(Resources.Load<GameController>("Prefabs/GameController"));
-        }
+        GameController.Instantiate();
         EnterScene();
-    }
-
-    private void Update()
-    {
-        if (GameController.Instance && GameController.Instance.CurrentSceneController != this)
-        {
-            GameController.Instance.CurrentSceneController = this;
-        }
     }
 
     public virtual void EnterScene()
@@ -29,19 +18,17 @@ private void Start()
 
     public virtual void ExitToScene(string sceneName)
     {
-        Debug.Log("ExitToScene" + sceneName);
-
-        SceneManager.LoadScene(sceneName);
+        GameController.Instance.TransitionToScene(sceneName);
     }
 
     public virtual void CutsceneHandleCallback(string tag)
     {
-        Debug.Log("Unhandled CutsceneCallback" + tag);
+        GameController.Log("Unhandled CutsceneCallback", tag);
     }
 
     public virtual void AnimationCallback(GameObject obj)
     {
-        Debug.Log("AnimationCallback" + obj);
+        GameController.Log("AnimationCallback", obj);
     }
 
     public void AddInventoryObject(string inventoryObjectName)

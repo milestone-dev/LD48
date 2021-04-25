@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e54d3f7aa494321903bb5023abf1f0, type: 3}
-  m_Name: Submarine_Captain_Default
+  m_Name: Submarine_Captain_Intro
   m_EditorClassIdentifier: 
   Entries:
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
-    Text: Yeah?
+    Text: Hey kid, how does it feel to be on a real boat for once, away from your
+      safe desk?
     AudioClip: {fileID: 0}
-    ExtraDuration: 1
+    ExtraDuration: 3
     Callback:
       m_PersistentCalls:
         m_Calls: []

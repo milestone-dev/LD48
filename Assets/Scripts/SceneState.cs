@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SceneState : MonoBehaviour {
 
+    public float cameraX;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
     }
-
 }
-
