@@ -97,6 +97,11 @@ public class GameController : MonoBehaviour {
         Debug.Log(string.Join(" ", messages));
     }
 
+    public static void LogError(params object[] messages)
+    {
+        Debug.LogError(string.Join(" ", messages));
+    }
+
     public bool IsSwitchSet(string switchName)
     {
         return Switches.Exists(flag => flag.name.Equals(switchName));

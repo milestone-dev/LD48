@@ -24,18 +24,22 @@ public class SceneController : MonoBehaviour {
         // Nothing should happen here since we don't know the state.
     }
 
+    public virtual void AddConsumedObject(GameObject obj)
+    {
+        GameController.LogError("AddConsumedObject called on SceneController");
+    }
+
     public void DestroyConsumedObjectNames(SceneState state)
     {
         foreach (string name in state.DestroyedObjectNames)
         {
             GameObject obj = GameObject.Find(name);
-            GameController.Log(name, obj);
             if (obj)
             {
                 Destroy(obj);
             } else
             {
-                Debug.LogError("Unable to destroy object named " + name);
+                GameController.LogError("FAILED Destroying", name);
             }
         }
     }

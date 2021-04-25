@@ -33,6 +33,6 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   DialogTree: {fileID: 0}
-  SwitchToSet: {fileID: 0}
+  SwitchToSet: {fileID: 11400000, guid: b37072268ec9446a8869444c2a18a902, type: 2}
   SwitchToClear: {fileID: 0}
   ItemToGet: {fileID: 11400000, guid: 61bc5f3376f6a4bbeaa5cde8d1ec159e, type: 2}

@@ -20,6 +20,11 @@ public class SubmarineBridgeSceneController : SceneController
         DestroyConsumedObjectNames(State);
     }
 
+    public override void AddConsumedObject(GameObject obj)
+    {
+        State.AddConsumedObject(obj);
+    }
+
     public override void CutsceneHandleCallback(string tag)
     {
         if (tag.Equals("RemoveCoffeeCup"))

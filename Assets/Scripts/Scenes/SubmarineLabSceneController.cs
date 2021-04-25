@@ -11,4 +11,9 @@ public class SubmarineLabSceneController : SceneController
         State = FindObjectOfType<SubmarineLabSceneState>();
         DestroyConsumedObjectNames(State);
     }
+
+    public override void AddConsumedObject(GameObject obj)
+    {
+        State.AddConsumedObject(obj);
+    }
 }

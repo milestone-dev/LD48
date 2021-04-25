@@ -11,4 +11,9 @@ public class SubmarineHallwaySceneController : SceneController
         State = FindObjectOfType<SubmarineHallwaySceneState>();
         DestroyConsumedObjectNames(State);
     }
+
+    public override void AddConsumedObject(GameObject obj)
+    {
+        State.AddConsumedObject(obj);
+    }
 }

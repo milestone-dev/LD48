@@ -57,13 +57,7 @@ public class SceneObjectController : MonoBehaviour {
                 GameUIController.Instance.InventoryAddItem(Item);
                 if (ConsumeObject)
                 {
-                    SceneState sceneScate = FindObjectOfType<SceneState>();
-                    GameController.Log("adding", name, sceneScate);
-
-                    if (sceneScate)
-                    {
-                        sceneScate.DestroyedObjectNames.Add(name);
-                    }
+                    GameController.Instance.CurrentSceneController.AddConsumedObject(gameObject);
                     Destroy(gameObject);
                 }
             }
