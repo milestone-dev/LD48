@@ -136,7 +136,7 @@ PrefabInstance:
         of Junior Officer on Research Vessel Linneaus, departing tomorrow at 05:30.\n\nYou
         and the rest of the crew will investigate an unexpected radioactive signal
         emanating from the Bothnia trench in the northern Baltic Sea.\n\nFull briefing
-        will be concluded by Captain Swedenborg once all crew has boarded.\n\nCongratluations.\n\nHedda
+        will be concluded by Captain Swedenborg once all crew has boarded.\n\nCongratulations.\n\nHedda
         Stj\xE4rng\xE5rd,\nScandinavian Department of Science and Exploration"
       objectReference: {fileID: 0}
     - target: {fileID: 6841348242202895178, guid: 2004d3e0c3da94ee9a1cc3355babbbc7, type: 3}

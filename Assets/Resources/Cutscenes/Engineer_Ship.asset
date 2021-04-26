@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Entries:
   - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
-    Text: She's a beauty, isn't she? Amadaus and I have taken the Linneaus on over
-      200 missions, and she has never let us down.
+    Text: She's a beauty, isn't she? Cap and I have taken the Linneaus on over 200
+      missions, and she has never let us down.
     AudioClip: {fileID: 0}
     ExtraDuration: 12
     Callback:
