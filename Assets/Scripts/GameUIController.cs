@@ -530,6 +530,7 @@ public class GameUIController : MonoBehaviour {
         {
             Vector3 tooltipVector = Input.mousePosition;
             tooltipVector.z = CursorTooltip.transform.position.z;
+            tooltipVector.y -= 32;
             CursorTooltip.transform.position = tooltipVector;
         }
     }
