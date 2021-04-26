@@ -24,7 +24,7 @@ MonoBehaviour:
     Text: It's gone cold, so it's gonna take a while. But you'll never see me throw
       out coffee.
     AudioClip: {fileID: 0}
-    ExtraDuration: 4
+    ExtraDuration: 5
     Callback:
       m_PersistentCalls:
         m_Calls: []

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Entries:
   - Character: {fileID: 11400000, guid: adeb4ffee7c5840f599317acad507d26, type: 2}
-    Text: Access Granted
+    Text: Access Granted. Sonar System Activating...
     AudioClip: {fileID: 0}
     ExtraDuration: 4
     Callback:

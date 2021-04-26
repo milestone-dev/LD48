@@ -17,7 +17,7 @@ MonoBehaviour:
     Text: "You haven't heard of Nobel Price lauerat Amadeus Lundstr\xF6m? I don't
       have time to share my backstory with junior staff."
     AudioClip: {fileID: 0}
-    ExtraDuration: 10
+    ExtraDuration: 8
     Callback:
       m_PersistentCalls:
         m_Calls: []

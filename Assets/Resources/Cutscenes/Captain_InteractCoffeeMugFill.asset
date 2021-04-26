@@ -16,14 +16,14 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
     Text: Great, fresh coffee!
     AudioClip: {fileID: 0}
-    ExtraDuration: 4
+    ExtraDuration: 3
     Callback:
       m_PersistentCalls:
         m_Calls: []
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
     Text: '*slurp slurp*'
     AudioClip: {fileID: 0}
-    ExtraDuration: 4
+    ExtraDuration: 2
     Callback:
       m_PersistentCalls:
         m_Calls: []

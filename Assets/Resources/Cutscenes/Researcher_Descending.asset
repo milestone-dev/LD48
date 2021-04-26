@@ -16,7 +16,7 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
     Text: Absolutely not! And I've already told the captain as much.
     AudioClip: {fileID: 0}
-    ExtraDuration: 6
+    ExtraDuration: 4
     Callback:
       m_PersistentCalls:
         m_Calls: []
@@ -39,7 +39,7 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
     Text: We are not gong anywhere until someone can find me a vial!
     AudioClip: {fileID: 0}
-    ExtraDuration: 6
+    ExtraDuration: 5
     Callback:
       m_PersistentCalls:
         m_Calls: []

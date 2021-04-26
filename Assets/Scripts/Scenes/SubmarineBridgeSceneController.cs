@@ -33,5 +33,11 @@ public class SubmarineBridgeSceneController : SceneController
             State.PickedUpCoffeeCup = true;
             return;
         }
+
+        if (tag.Equals("Descend"))
+        {
+            ExitToScene("Act2Scene");
+            return;
+        }
     }
 }

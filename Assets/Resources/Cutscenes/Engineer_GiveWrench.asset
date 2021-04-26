@@ -16,19 +16,19 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
     Text: Ah, thanks mate!
     AudioClip: {fileID: 0}
-    ExtraDuration: 4
+    ExtraDuration: 2
     Callback:
       m_PersistentCalls:
         m_Calls: []
   - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
     Text: '*Tinkering*'
     AudioClip: {fileID: 0}
-    ExtraDuration: 4
+    ExtraDuration: 2
     Callback:
       m_PersistentCalls:
         m_Calls: []
   - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
-    Text: Can you tell Ricky we're good to go?
+    Text: And... Done! Can you tell cap we're good to go?
     AudioClip: {fileID: 0}
     ExtraDuration: 4
     Callback:

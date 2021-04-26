@@ -31,7 +31,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
-    Text: Sigh... Can you take care of this, junior?
+    Text: Sigh... Can you take care of this?
     AudioClip: {fileID: 0}
     ExtraDuration: 4
     Callback:

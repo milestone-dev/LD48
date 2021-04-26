@@ -25,7 +25,7 @@ MonoBehaviour:
     Text: However, the signature of this... signal we've been sent to investigate
       is unlike anything I've ever seen before.
     AudioClip: {fileID: 0}
-    ExtraDuration: 10
+    ExtraDuration: 8
     Callback:
       m_PersistentCalls:
         m_Calls: []

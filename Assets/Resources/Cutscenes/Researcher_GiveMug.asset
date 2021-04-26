@@ -16,14 +16,14 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
     Text: Are you serious?
     AudioClip: {fileID: 0}
-    ExtraDuration: 4
+    ExtraDuration: 3
     Callback:
       m_PersistentCalls:
         m_Calls: []
   - Character: {fileID: 11400000, guid: 23d207840ce374409a8ea30774b87ebc, type: 2}
     Text: I guess it will have to do...
     AudioClip: {fileID: 0}
-    ExtraDuration: 4
+    ExtraDuration: 3
     Callback:
       m_PersistentCalls:
         m_Calls: []

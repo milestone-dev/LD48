@@ -16,14 +16,14 @@ MonoBehaviour:
   - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
     Text: Um, not sure what there's to tell. Name's Toby. I keep the ship running.
     AudioClip: {fileID: 0}
-    ExtraDuration: 6
+    ExtraDuration: 5
     Callback:
       m_PersistentCalls:
         m_Calls: []
   - Character: {fileID: 11400000, guid: bb7b39253eb1e4939a333b05a9551b57, type: 2}
     Text: Oh, yeah! And I have a dog called Scraps!
     AudioClip: {fileID: 0}
-    ExtraDuration: 6
+    ExtraDuration: 5
     Callback:
       m_PersistentCalls:
         m_Calls: []

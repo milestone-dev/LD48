@@ -20,13 +20,25 @@ MonoBehaviour:
     Callback:
       m_PersistentCalls:
         m_Calls: []
-  - Character: {fileID: 11400000, guid: 686c395d88e444ba9832c75961bde25c, type: 2}
-    Text: END OF ACT 1
+  - Character: {fileID: 0}
+    Text: 
     AudioClip: {fileID: 0}
-    ExtraDuration: 5
+    ExtraDuration: 1
     Callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 5342185931872273929, guid: 2ed09b6669f254aeab5a7262a7f01a40, type: 3}
+          m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+          m_MethodName: GoToScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Act2Scene
+            m_BoolArgument: 0
+          m_CallState: 1
   DialogTree: {fileID: 0}
   SwitchToSet: {fileID: 0}
   SwitchToClear: {fileID: 0}

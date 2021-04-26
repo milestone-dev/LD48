@@ -132,10 +132,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6841348242202895178, guid: 2004d3e0c3da94ee9a1cc3355babbbc7, type: 3}
       propertyPath: m_Text
-      value: 'ACT 2
+      value: 'TO BE CONTINUED IN
 
 
-        THE ABYSS'
+        ACT 2
+
+
+        THE ABYSS
+
+
+        --
+
+        This
+        game was produced for
+
+        Ludum Dare 48 - "Deeper and Deeper"
+
+        --
+
+
+        By
+        Milestone'
       objectReference: {fileID: 0}
     - target: {fileID: 6841348242202895178, guid: 2004d3e0c3da94ee9a1cc3355babbbc7, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -231,6 +248,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6841348242821745189, guid: 2004d3e0c3da94ee9a1cc3355babbbc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841348242821745195, guid: 2004d3e0c3da94ee9a1cc3355babbbc7, type: 3}
+      propertyPath: m_Delegates.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

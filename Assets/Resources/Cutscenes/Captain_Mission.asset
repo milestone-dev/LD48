@@ -33,7 +33,7 @@ MonoBehaviour:
     Text: This 'signal' we're supposed to find down there is at 3.2k, basically at
       the bottom.
     AudioClip: {fileID: 0}
-    ExtraDuration: 8
+    ExtraDuration: 6
     Callback:
       m_PersistentCalls:
         m_Calls: []

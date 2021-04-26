@@ -34,11 +34,4 @@ MonoBehaviour:
     RequiredSwitch: {fileID: 0}
     PreventingSwitch: {fileID: 0}
     tag: 
-  - Text: Open System Info
-    DisabledByDefault: 0
-    Cutscene: {fileID: 11400000, guid: 800909b3422854cb4be012f8d992cdc6, type: 2}
-    DialogTree: {fileID: 0}
-    RequiredSwitch: {fileID: 0}
-    PreventingSwitch: {fileID: 0}
-    tag: 
   Character: {fileID: 11400000, guid: adeb4ffee7c5840f599317acad507d26, type: 2}

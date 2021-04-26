@@ -14,9 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Entries:
   - Character: {fileID: 11400000, guid: adeb4ffee7c5840f599317acad507d26, type: 2}
-    Text: <Changelog Placeholder>
+    Text: 'Version 2.12.5.2
+
+
+      - Bug fixes and updates.'
     AudioClip: {fileID: 0}
-    ExtraDuration: 12
+    ExtraDuration: 3
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - Character: {fileID: 11400000, guid: adeb4ffee7c5840f599317acad507d26, type: 2}
+    Text: 'Version 2.12.5.1
+
+
+      - New Authorization Module, Automatic generation
+      of passwords based on crew data.'
+    AudioClip: {fileID: 0}
+    ExtraDuration: 8
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - Character: {fileID: 11400000, guid: adeb4ffee7c5840f599317acad507d26, type: 2}
+    Text: 'Version 2.12.5.0
+
+
+      - Bug fixes and updates.'
+    AudioClip: {fileID: 0}
+    ExtraDuration: 3
     Callback:
       m_PersistentCalls:
         m_Calls: []
